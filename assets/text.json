@@ -1,0 +1,167 @@
+{
+    "app_version": "1.0.0",
+    "pages" : [
+        {
+            "page_name" : "home",
+            "endpoint" : "users/data",
+            "widget" : {
+                "menu": {
+                    "type": "list_menu",
+                    "menu_items": [
+                        {
+                            "title": "Title 12",
+                            "color": "ec524b",
+                            "icon": "account_circle",
+                            "navigator": {
+                                "type": "pushNamed",
+                                "route_name": "menu_2"
+                            }
+                        },
+                        {
+                            "title": "Title 2",
+                            "color": "8bcdcd",
+                            "icon": "ac_unit",
+                            "navigator": {
+                                "type":"pushNamed",
+                                "route_name":"page2"
+                            }
+                        },
+                        {
+                            "title": "Title 3",
+                            "color": "fcf876",
+                            "icon": "restaurant_menu",
+                            "navigator": {
+                                "type":"pushNamed",
+                                "route_name":"/list_menu"
+                            }
+                        },
+                        {
+                            "title": "Title 22",
+                            "color": "fcf876",
+                            "icon": "menu"
+                        }
+                    ]
+                },
+                "drawer": {
+                    "top_component": {
+                        "type": "text",
+                        "title": "Flutter Builder",
+                        "subtitle": "Build App Without Coding",
+                        "hint_text": "Name Goes Here",
+                        "sub_text": "+623456789 / email@mail.com",
+                        "bg_color": "e8e8e8"
+                    },
+                    "items": [
+                        {
+                            "title": "menu 1",
+                            "icon": "menu"
+                        },
+                        {
+                            "title": "menu 1",
+                            "icon": "menu"
+                        },
+                        {
+                            "title": "menu 1",
+                            "icon": "menu"
+                        },
+                        {
+                            "title": "menu 1",
+                            "icon": "menu"
+                        }
+                    ],
+                    "app_version": "1.0.0"
+                },
+                "bottom_navigation": {
+                    "bg_color": "e8e8e8",
+                    "selected_icon_color": "",
+                    "unselected_icon_color": "",
+                    "icon_size": 30.0,
+                    "items": [
+                        {
+                            "label": "label 1",
+                            "icon": "ac_unit"
+                        },
+                        {
+                            "label": "label 1",
+                            "icon": "menu"
+                        },
+                        {
+                            "label": "label 1",
+                            "icon": "location_on"
+                        },
+                        {
+                            "label": "label 1",
+                            "icon": "ac_unit"
+                        },
+                        {
+                            "label": "label 1",
+                            "icon": "ac_unit"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "page_name" : "menu_2",
+            "widget" : {
+                "menu": {
+                    "type": "grid_menu",
+                    "menu_items": [
+                        {
+                            "title": "Title 12",
+                            "color": "ec524b",
+                            "icon": "account_circle",
+                            "navigator": {
+                                "type": "pushNamed",
+                                "route_name": "/pasnc"
+                            }
+                        },
+                        {
+                            "title": "Title 2",
+                            "color": "8bcdcd",
+                            "icon": "ac_unit"
+                        },
+                        {
+                            "title": "Title 3",
+                            "color": "fcf876",
+                            "icon": "restaurant_menu"
+                        },
+                        {
+                            "title": "Title 22",
+                            "color": "fcf876",
+                            "icon": "menu"
+                        }
+                    ]
+                }
+            }
+        },{
+            "page_name" : "page2",
+            "endpoint" : "users/data",
+            "widget" : {
+                "menu" : {
+                    "type" : "crud"
+                }
+            }
+        },{
+            "page_name" : "input",
+            "post_endpoint" : "users/add",
+            "widget" : {
+                "items" : [
+                    {"label" : "Name", "hint" : "Your Name Here", "value" : "name"},
+                    {"label" : "Email", "hint" : "YourEmail@mail.com", "value" : "email"},
+                    {"label" : "Password", "hint" : "*********", "obsecure" : true, "value" : "password"}
+                ]
+            }
+        },{
+            "page_name" : "update",
+            "post_endpoint" : "users/edit",
+            "widget" : {
+                "items" : [
+                    {"label" : "Name", "hint" : "Your Name Here", "value" : "name"},
+                    {"label" : "Email", "hint" : "YourEmail@mail.com", "value" : "email"},
+                    {"label" : "Password", "hint" : "*********", "obsecure" : true, "value" : "password"}
+                ]
+            }
+        }
+    ]
+}   
