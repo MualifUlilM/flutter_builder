@@ -16,6 +16,8 @@ class MyProvider extends ChangeNotifier {
   }
 
   void clearData() {
+    print('data cleared');
+    print('DATA : ' + _datas.toString());
     _datas = {};
     notifyListeners();
   }

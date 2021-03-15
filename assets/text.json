@@ -39,6 +39,15 @@
                             "title": "Title 22",
                             "color": "fcf876",
                             "icon": "menu"
+                        },
+                        {
+                            "title": "Login",
+                            "color": "8DFFA5",
+                            "icon": "login",
+                            "navigator": {
+                                "type":"pushNamed",
+                                "route_name":"login"
+                            }
                         }
                     ]
                 },

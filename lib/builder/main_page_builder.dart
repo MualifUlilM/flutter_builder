@@ -29,7 +29,7 @@ class _MainPageBuilderState extends State<MainPageBuilder>
   @override
   void initState() {
     // TODO: implement initState
-    print(widget.data);
+    print("TEST : " + widget.data.toString());
     if (widget.data["widget"].containsKey("tabbar")) {
       tabController = TabController(
           length: widget.data["widget"]["tabbar"]["tabbar_items"].length,

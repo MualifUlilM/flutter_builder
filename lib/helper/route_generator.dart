@@ -2,10 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/builder/form_page_builder.dart';
 import 'package:my_app/builder/form_update_page_builder.dart';
+import 'package:my_app/builder/login_page_builder.dart';
 import 'package:my_app/builder/main_page_builder.dart';
 import 'package:my_app/builder/not_found_page.dart';
 
-class Router {
+class Router2 {
   static Route<dynamic> generatorRoute(RouteSettings settings) {
     switch (settings.name) {
       case '/':
@@ -29,6 +30,10 @@ class Router {
       case 'update':
         return MaterialPageRoute(
             builder: (ctx) => UpdatePageBuilder(settings.arguments));
+        break;
+      case 'login':
+        return MaterialPageRoute(
+            builder: (ctx) => LoginPageBuilder(data: settings.arguments));
         break;
       default:
         return MaterialPageRoute(builder: (ctx) => NotFoundPage());
